@@ -22,8 +22,8 @@ const [data,setdata]=useState({
       console.log("data",data);
      }} className="flex flex-col w-full items-center">
      {!isSignInPage&&<Input label="Full Name" name="name" placeholder="Enter Your Full Name" className=" mb-6" value={data.fullName} onChange={(e)=>setdata({...data,fullName:e.target.value})}></Input>}
-     <Input label="Email Address" name="email" placeholder="Enter Your Email" className=" mb-6" value={data.email} onChange={(e)=>setdata({...data,email:e.target.value})}></Input>
-     <Input label="password" type="password" name="password" placeholder="Enter Your Password" className=" mb-14" value={data.password} onChange={(e)=>setdata({...data,password:e.target.value})}></Input>
+     <Input label="Email" type="email" name="email" placeholder="Enter Your Email" className=" mb-6" value={data.email} onChange={(e)=>setdata({...data,email:e.target.value})}></Input>
+     <Input label="Password" type="password" name="password" placeholder="Enter Your Password" className=" mb-14" value={data.password} onChange={(e)=>setdata({...data,password:e.target.value})}></Input>
     <Button label={ isSignInPage?"Sign in":"Sign up"} type='submit' className=" w-full  mb-4"></Button>
     </form>
     <div>{isSignInPage?"Didn't have an account":"Already have an account?"}<span className=" text-primary cursor-pointer underline ml-2">{isSignInPage?"Sign up":"Sign in"}</span></div>
