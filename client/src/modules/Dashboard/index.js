@@ -35,7 +35,7 @@ const DashBoard = () => {
   ];
 
   return (
-    <div className=" w-screen flex">
+    <div className=" w-screen flex  fixed">
       <div className=" w-[25%] h-screen  bg-secondary overflow-y-auto no-scrollbar">
         <div className=" flex ml-3 items-center my-8">
           <div className=" border-2 border-primary h-28 w-28 p-2 rounded-full flex justify-center items-center">
@@ -71,7 +71,7 @@ const DashBoard = () => {
       </div>
 
       <div className=" w-[50%] h-screen bg-white flex flex-col items-center">
-        <div className="mt-3  w-[75%] bg-secondary h-[80px] my-1 rounded-full flex items-center px-14 ">
+        <div className="mt-3  w-[75%] bg-secondary h-[80px] my-10 rounded-full flex items-center px-14 ">
           <div className=' h-[64px] w-16 flex justify-center items-center  p-3 border-primary border rounded-full'>
             <img src={daniyal} width={40} height={40}></img>
           </div>
